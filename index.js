@@ -3,6 +3,7 @@ const express = require("express");
 connectTomongo();
 const app = express();
 const port = 5000;
+app.use(express.json());
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/user", require("./routes/user"));
 app.use("/api/ps", require("./routes/ps"));

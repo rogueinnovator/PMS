@@ -6,11 +6,11 @@ const UserSchema = new Schema({
   },
   cnic: {
     type: String,
-    // require: true,
+    require: true,
     unique: true,
   },
-  badgeNumber: String,
   rank: String,
+  badgeNumber: String,
   email: {
     type: String,
     unique: true,
