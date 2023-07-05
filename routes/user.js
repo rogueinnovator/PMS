@@ -3,51 +3,46 @@ const router = express.Router();
 const User = require("../models/User");
 const { body, validationResult } = require("express-validator");
 router.post(
-  "/createuser",
-  [
-    body("name").isLength({ min: 3 }),
-    body("email").isEmail(),
-    body("password").isLength({ min: 5 }),
-  ],
+  "/createemp",
+  [body("name").isEmpty(), body("cinc").isNumeric(), body("email").isEmail()],
   async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty) {
+      return res.ststus(400).json({ errors: errors.array() });
+    }
+    let newuser = await User.findOne({ cnic: req.body.cnic });
+    if (newuser) {
+      return res.status(400).json({ errors: "a user with this CNIC exist" });
+    }
     try {
-      const errors = validationResult(req);
-      if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
-      }
-      const { name, cnic, batch, email, ps } = req.body;
-      let emp = await User.create({
+      const { name, cnic, email, rank, policestationId } = req.body;
+      newuser = await User.create({
         name,
         cnic,
-        batch,
         email,
-        ps,
+        rank,
+        PS: policestationId,
       });
-      const createemp = emp.save();
-      res.status(201).json(createemp);
-    } catch (error) {
-      console.error(error);
-      res.json(error);
-    }
+      res.json(newuser);
+    } catch (error) {}
   }
 );
-router.get(
-  "/employee/:policestationId",
-  // [body("name").isEmpty(), body("cnic").isNumeric(), body("PS")],
-  async (req, res) => {
-    const policestationId = req.params.policestationId;
-    
-    try{
-      const user = await User.findById(policestationId)
-      .populate("policestation")
-      .sort("policestation.name")
+router.get("/employee/:policestationId", async (req, res) => {
+  const policestationId = req.params.policestationId;
+
+  try {
+    let user = await User.find({ PS: policestationId })
+      .populate("policestations")
+      // .populate({ path: "policestations",select:"name" })
+
+      .sort("policestations.name")
       .exec();
-      res.status(200).json(user);
-    }
-    catch(err){
-      console.error(err);
-      res.status(500).json({ message: "Internal server error" });
-    }
+    console.log(user);
+    res.status(200).json(user);
+    console.log(user);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Internal server error" });
   }
-);
+});
 module.exports = router;

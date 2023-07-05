@@ -14,10 +14,10 @@ const AuthSchema = new Schema({
     type: String,
     require: true,
   },
-  // date: {
-  //   type: Date,
-  //   default: Date.now,
-  // },
+  isAdmin: {
+    type: Boolean,
+    default: false,
+  },
 });
 const Auth = mongoose.model("auth", AuthSchema);
 module.exports = Auth;

@@ -9,16 +9,18 @@ const UserSchema = new Schema({
     require: true,
     unique: true,
   },
-  rank: String,
-  badgeNumber: String,
   email: {
     type: String,
     unique: true,
     required: true,
   },
+  
+  rank: String,
+  badgeNumber: String,
   PS: {
     type: Schema.Types.ObjectId,
-    ref: "policestation",
+    name: Schema.name,
+    ref: "policestations",
   },
 });
 const User = mongoose.model("user", UserSchema);
