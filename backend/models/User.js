@@ -6,19 +6,21 @@ const UserSchema = new Schema({
   },
   cnic: {
     type: String,
-    // require: true,
+    require: true,
     unique: true,
   },
-  badgeNumber: String,
-  rank: String,
   email: {
     type: String,
     unique: true,
     required: true,
   },
+  
+  rank: String,
+  badgeNumber: String,
   PS: {
     type: Schema.Types.ObjectId,
-    ref: "policestation",
+    name: Schema.name,
+    ref: "policestations",
   },
 });
 const User = mongoose.model("user", UserSchema);

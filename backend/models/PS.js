@@ -7,5 +7,6 @@ const PSSchema = new Schema({
   add: String,
   
 });
-const PS = mongoose.model("policestation", PSSchema);
+const PS = mongoose.model("policestations", PSSchema);
 module.exports = PS;
+//PS is used to perform CRUD 

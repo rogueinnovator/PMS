@@ -1,0 +1,37 @@
+/* styles.css */
+.navbar {
+  background-color: #7abaf5c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-size: large;
+  font-family: fantasy;
+  border-radius: 1ch;
+}
+body    {
+    background-image: url("/home/rogue/police-managment-system/public/images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+@keyframes moveText {
+  0% {
+    left: 0; /* Starting position */
+  }
+  100% {
+    left: 200px; /* Ending position (adjust as needed) */
+  }
+}
+.custom {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: fantasy;
+  text-transform: uppercase;
+  color: #551313;
+  text-shadow: 3px 3px 5px rgba(236, 238, 245, 0.3);
+  background: linear-gradient(45deg, #007bff, #00bfff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
