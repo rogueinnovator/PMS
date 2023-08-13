@@ -2,11 +2,19 @@ import React from "react";
 import { Card } from "react-bootstrap";
 const EmployeItem = (props) => {
   const { employee } = props;
-  console.log(employee.name);
-
+  const employename = employee?.name || "NO NAME";
+  const employecnic = employee?.cnic || "NO CNIC";
+  const employeemail = employee?.email || "NO EMAIL";
+  const employerank = employee?.rank || "NO RANK SPECIFIED ";
   return (
     <div>
-      <Card>{employee.name}</Card>
+      <Card>
+        <p>Name: {employename}</p>
+        <p>CNIC: {employecnic}</p>
+        <p>Email: {employeemail}</p>
+        <p>Rank: {employerank}</p>
+        <>oshu</>
+      </Card>
     </div>
   );
 };

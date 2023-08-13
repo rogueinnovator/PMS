@@ -1,0 +1,79 @@
+.text-effect {
+  font-family: "Francois One", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.text-effect span {
+  color: rgba(39, 134, 189, 0.2);
+  display: inline-block;
+  position: relative;
+}
+.text-effect span:after {
+  content: attr(data-content);
+  color: #3c27b1;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animate 6s infinite;
+}
+.text-effect span:nth-child(2):after {
+  animation-delay: 0.2s;
+}
+.text-effect span:nth-child(3):after {
+  animation-delay: 0.4s;
+}
+.text-effect span:nth-child(4):after {
+  animation-delay: 0.6s;
+}
+.text-effect span:nth-child(5):after {
+  animation-delay: 0.8s;
+}
+.text-effect span:nth-child(6):after {
+  animation-delay: 1s;
+}
+.text-effect span:nth-child(7):after {
+  animation-delay: 1.2s;
+}
+.text-effect span:nth-child(8):after {
+  animation-delay: 1.4s;
+}
+.text-effect span:nth-child(9):after {
+  animation-delay: 1.6s;
+}
+.text-effect span:nth-child(10):after {
+  animation-delay: 1.8s;
+}
+.text-effect span:nth-child(10):after {
+  animation-delay: 2s;
+}
+@keyframes animate {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+@media only screen and (max-width: 990px) {
+  .text-effect {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text-effect {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .text-effect {
+    font-size: 40px;
+  }
+}

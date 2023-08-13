@@ -1,0 +1,265 @@
+body,
+ul {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+}
+/* h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 200;
+  font-size: 20px;
+} */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 2em auto;
+  background: #64a3dd6c;
+  clear: both;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+ul {
+  width: 800px;
+  font-size: large;
+  margin: auto;
+}
+
+ul li {
+  border-right: 1px solid rgb(59, 68, 75);
+  float: left;
+  overflow: hidden;
+  height: 400px;
+  list-style: none;
+  position: relative;
+  width: 72px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: url("/home/rogue/police-managment-system/public/images/background.jpeg");
+  background-size: cover;
+  border: 2px solid #3d464e;
+  border-radius: 10px;
+}
+
+li a {
+  display: block;
+  width: 100px;
+  line-height: 177px;
+  text-decoration: none;
+  text-indent: 0px;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  width: 72px;
+  text-indent: 0px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+ul li:nth-child(1) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+
+ul li:nth-child(1) a::before {
+  content: "PESHAWAR"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  line-height: 3; /* Set line height */
+  font-weight: bolder;
+}
+
+ul li:nth-child(2) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+ul li:nth-child(2) a::before {
+  content: "PESHAWAR"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  line-height: 3; /* Set line height */
+  font-weight: bolder;
+}
+
+ul li:nth-child(3) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+ul li:nth-child(3) a::before {
+  content: "GULBAHAR"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  font-weight: bolder;
+  line-height: 3; /* Set line height */
+}
+
+ul li:nth-child(4) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+ul li:nth-child(4) a::before {
+  content: "GULBAHAR"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  font-weight: bolder;
+  line-height: 3; /* Set line height */
+}
+
+ul li:nth-child(5) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+ul li:nth-child(5) a::before {
+  content: "GULBAHAR"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  font-weight: bolder;
+  line-height: 3; /* Set line height */
+}
+ul li:nth-child(6) a {
+  display: flex; /* Use flexbox to vertically align content */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  background-color: #353538; /* Set background color for the list item */
+}
+ul li:nth-child(6) a::before {
+  content: "TARRAKAI"; /* Replace with your desired text */
+  letter-spacing: 30px;
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+  text-orientation: upright; /* Set text orientation */
+  position: absolute; /* Position the text */
+  top: 10;
+  left: 0;
+  padding: 10px; /* Add padding to adjust spacing */
+  text-align: center;
+  line-height: 1.5;
+  background-color: #353538; /* Set background color */
+  color: #fff; /* Set text color */
+  font-weight: bolder;
+  line-height: 3; /* Set line height */
+}
+
+ul li:hover a {
+  background-position: right top;
+}
+
+ul li:hover {
+  width: 360px;
+}
+
+p {
+  color: #353538;
+  font-size: 20px;
+  letter-spacing: 1;
+  line-height: 20px;
+  padding-top: 70px;
+  font: optional;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 200px;
+  margin: auto;
+}
+h3 {
+  color: rgb(36, 24, 2);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+  text-shadow: 1px 1px 2px rgb(18, 110, 95), 0 0 1em rgb(237, 237, 243),
+    0 0 0.2em rgb(139, 139, 231);
+  letter-spacing: 2;
+  text-decoration: underline;
+  margin: 50px 50px 20px;
+  padding: 5px 20px 0px 30px;
+  white-space: nowrap;
+}
+
+/*font-face*/
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Hairline"), local("Lato-Hairline"),
+    url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff)
+      format("woff");
+}

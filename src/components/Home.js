@@ -1,42 +1,48 @@
-import React from "react";
-import "../custome/custome.css";
-import { Link } from "react-router-dom";
-import { Card, Button, Placeholder } from "react-bootstrap";
-const home = () => {
-  return (
-    <div className="d-flex justify-content-around">
-      <Card style={{ width: "18rem" }}>
-        <Card.Img
-          variant="top"
-          src={process.env.PUBLIC_URL + "/images/background.jpeg"}
-        />
-        <Card.Body>
-          <Card.Title>PESHAWAR</Card.Title>
-          <Card.Text>THIS is located in the middle of PESHAWAR</Card.Text>
-          <Link to="/psdetail">
-            {" "}
-            <Button variant="primary">Details</Button>
-          </Link>
-        </Card.Body>
-      </Card>
-
-      <Card style={{ width: "18rem" }}>
-        <Card.Img
-          variant="top"
-          src={process.env.PUBLIC_URL + "/images/background.jpeg"}
-        />
-        <Card.Body>
-          <Placeholder as={Card.Title} animation="glow">
-            <Placeholder xs={6} />
-          </Placeholder>
-          <Placeholder as={Card.Text} animation="glow">
-            <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{" "}
-            <Placeholder xs={6} /> <Placeholder xs={8} />
-          </Placeholder>
-          <Placeholder.Button variant="primary" xs={6} />
-        </Card.Body>
-      </Card>
-    </div>
-  );
-};
-export default home;
+  import "../custome/accordion.css";
+  import React from "react";
+  import { Link } from "react-router-dom";
+  const Home = () => {
+    return (
+      <div className="wrapper">
+        <ul>
+          <li>
+            <Link to="/psdetails"> </Link>
+            <h3>PESHWAR PAJAGAI</h3>
+            <p>this is located in the middle of peshawar near to the college</p>
+          </li>
+          b
+          <li>
+            <Link to="/"> </Link>
+            <h3>PESHWAR GULBAHAR</h3>
+            <p>THIS police Station is located near sadddar </p>
+          </li>
+          <li>
+            <Link to="/"> </Link>
+            <h3>PESHWAR GULBAHAR</h3> <p>da de rata pata neshta </p>
+          </li>
+          <li>
+            <Link to="/"> </Link>
+            <h3>PESHWAR GULBAHAR</h3>{" "}
+            <p>da gul baAHioakjs c? AOSIOCN, AIBSCKJ :AKS / </p>
+          </li>
+          <li>
+            <Link to="/"> </Link>
+            <h3>PESHWAR GULBAHAR</h3>{" "}
+            <p>
+              the falosus and integible city of peshawar is located in the middke
+              pof{" "}
+            </p>
+          </li>
+          <li>
+            <Link to="/"> </Link>
+            <h3>PESHWAR GULBAHAR</h3>{" "}
+            <p>
+              the falosus and integible city of peshawar is located in the middke
+              pof{" "}
+            </p>
+          </li>
+        </ul>
+      </div>
+    );
+  };
+  export default Home;

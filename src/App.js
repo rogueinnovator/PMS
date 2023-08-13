@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Employestate from "./context/employee/Employestate";
 import PSdetail from "./components/PSdetail";
-import EmployeItem from "./components/EmployeItem";
 import Employee from "./components/Employee";
 function App() {
   return (
@@ -16,11 +15,10 @@ function App() {
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/psdetail" element={<PSdetail />} />
-            <Route path="/employeeitem" element={<EmployeItem />} />
+            <Route path="/psdetails" element={<PSdetail />} />
+            <Route path="/employee" element={<Employee />} />
           </Routes>
         </Router>
-        <Employee />
       </Employestate>
     </>
   );
